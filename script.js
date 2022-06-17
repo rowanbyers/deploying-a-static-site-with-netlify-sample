@@ -1,6 +1,7 @@
 const clapButton = document.getElementById('clap-button');
 
 clapButton.addEventListener('click', switchBackground);
+clapButton.addEventListener('click', celebrate);
 
 function randomColor() {
   const red = Math.floor(Math.random() * 256);
@@ -37,5 +38,4 @@ function celebrate() {
 function switchBackground() {
   const backgroundColor = randomColor();
   document.body.style.backgroundColor = backgroundColor;
-  celebrate();
 }
